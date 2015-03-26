@@ -2,7 +2,7 @@ function S = gls(A,y,Sig)
 % S = gls(A,y,S)
 %
 % Generalized least squares for solving the linear regression problem 
-%   Ax = y + e ,   e ~ N(0,Sig)
+%   y = A*x + e ,   e ~ N(0,Sig)
 % If no data covariance matrix is provided, the code performs ordinary least
 % squares.
 %
