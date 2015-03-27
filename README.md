@@ -1,6 +1,6 @@
 ## Regression algorithms
 
-### Generalized Least Squares (gls.m)
+### Generalized Least Squares (gls.m, gls.py)
 
 Code for generalized least squares for solving the linear regression problem with normally distributed data errors with arbitrart covariance matrix, Σ:
 
@@ -14,6 +14,5 @@ where the weighting matrix W is the inverse square root of Σ, computed using th
 
 ### Coming soon:
 
-* gls.py 
 * IRLS algorithm for L1 minimization
 * Truncated SVD for underdetermined problems
