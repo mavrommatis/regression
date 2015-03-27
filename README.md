@@ -16,3 +16,4 @@ where the weighting matrix W is the inverse square root of Σ, computed using th
 
 * IRLS algorithm for L1 minimization
 * Truncated SVD for underdetermined problems
+* Locally weighted linear regression
