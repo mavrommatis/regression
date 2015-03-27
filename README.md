@@ -20,8 +20,16 @@ Performs robust linear regression by minimizing the L1 norm of the data residual
 
 using an [iterative reweighted least squares](http://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares) algorithm. L1 regression is less sensitive to outliers than standard least squares.
 
+### Lasso regularization using IRLS (lasso_irls.m)
+
+Performs [lasso regularized regression](http://en.wikipedia.org/wiki/Least_squares#Lasso_method) (aka sparsity-based regularization) by solving the following problem
+
+  min ||y - Ax||_2^2 + λ||x||_1
+
+where λ is a tunable scalar that is chosen based on a user-input tolerance on the data residual. The code uses an iterative reweighted least squares (ISLR) method to converge to the final estimate for x.
+
 ### Coming soon:
 
-* Truncated SVD for underdetermined problems
+* SVD regularization
 * Locally weighted linear regression
 * Feasible generalized least squares (using a correlation model)
