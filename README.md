@@ -22,7 +22,7 @@ using an [iterative reweighted least squares](http://en.wikipedia.org/wiki/Itera
 
 ### Local regression (loess.m)
 
-Performs non-parametric regression using locally weighted least squares with a Gaussian weighting kernel.
+Performs [local regression](http://en.wikipedia.org/wiki/Local_regression) using locally weighted least squares and a Gaussian weighting kernel.
 
 ### Lasso regularization using IRLS (lasso_irls.m)
 
