@@ -18,7 +18,7 @@ Performs robust linear regression by minimizing the L1 norm of the data residual
 
   min ||y - A*x||_1
 
-using an (iterative reweighted least squares)[http://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares] algorithm. L1 regression is less sensitive to outliers than standard least squares.
+using an [iterative reweighted least squares](http://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares) algorithm. L1 regression is less sensitive to outliers than standard least squares.
 
 ### Coming soon:
 
