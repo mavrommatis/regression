@@ -2,7 +2,7 @@
 
 ### Generalized Least Squares (gls.m, gls.py)
 
-Code for performing generalized least squares for solving the linear regression problem with normally distributed data errors with arbitrart covariance matrix, Σ:
+Code for performing generalized least squares for solving the linear regression problem with normally distributed data errors with arbitrary covariance matrix, Σ:
 
   y = Ax + ε ,   ε ~ N(0,Σ)
 
