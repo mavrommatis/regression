@@ -8,7 +8,7 @@ Performs linear regression using [generalized least squares](http://en.wikipedia
 
 If no data covariance matrix is provided, the code performs ordinary least squares (i.e., assumes Σ = Ι). Generalized linear squaressolves the problem of minimizing the squared L2 norm of the weighted residual,
 
-  min ||W*(y - A*x)||_2^2
+  min ||W * (y - A*x)||_2^2
 
 where the weighting matrix W is the inverse square root of Σ, computed using the [Cholesky factorization](http://en.wikipedia.org/wiki/Cholesky_decomposition). The code also computes the covariance matrix of the estimated model parameters, the χ^2 statistic, and the associated P-value.
 
