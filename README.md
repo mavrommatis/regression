@@ -20,7 +20,7 @@ Robust linear regression by minimizing the L1 norm of the data residual,
 
 using an [iterative reweighted least squares](http://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares) algorithm. L1 regression is less sensitive to outliers than standard least squares.
 
-### `lasso_irls`: Lasso regularization using IRLS
+### `lasso_irls.m`: Lasso regularization using IRLS
 
 [Lasso regularized regression](http://en.wikipedia.org/wiki/Least_squares#Lasso_method) (aka sparsity-based regularization) by solving the problem
 
