@@ -12,7 +12,7 @@ If no data covariance matrix is provided, the code performs ordinary least squar
 
 where the weighting matrix W is the inverse square root of Σ, computed using the [Cholesky factorization](http://en.wikipedia.org/wiki/Cholesky_decomposition). The code also computes the covariance matrix of the estimated model parameters, the χ^2 statistic, and the associated P-value.
 
-### Iterative reweighted least squares for L1 minimization (irls.m)
+### Robust (L1) regression using Iterative Reweighted Least Squares (irls.m)
 
 Performs robust linear regression by minimizing the L1 norm of the data residual,
 
