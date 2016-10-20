@@ -18,14 +18,18 @@ def gls(A,y,Sig):
     L = np.linalg.cholesky(Sig)
 
     # Weight by inverse square root of data covariance matrix
-    Linv = np.linalg.inv(L)
-    At = np.dot(Linv,A)
-    yt = np.dot(Linv,y)
+    # Linv = np.linalg.inv(L)
+    # At = np.dot(Linv,A)
+    # yt = np.dot(Linv,y)
+    At = np.linalg.solve(L,A)
+    yt = np.linalg.solve(L,y)
     
     # Ordinary least squares on weighted problem
-    xhat = np.linalg.lstsq(At,yt)[0]
+    # xhat = np.linalg.lstsq(At,yt)[0]
+    xhat = np.linalg.solve(At,yt)
     
     # Model covariance matrix
-    C = np.linalg.inv(np.dot(np.linalg.transpose(At),At))
+    # C = np.linalg.inv(np.dot(np.linalg.transpose(At),At))
+    C = np.linalg.inv(At.T.dot(At))
     
     return xhat, C
